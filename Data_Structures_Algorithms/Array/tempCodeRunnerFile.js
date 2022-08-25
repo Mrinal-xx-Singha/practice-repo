@@ -1,4 +1,4 @@
-// function reverse (str) {
+function reverse (str) {
 //     //check if there is no string or strings length is less than 2
 //     //and typeof which is used to check what type of datatype is declared
 //     //if string is not there then return hmmmmm this is not good
@@ -21,8 +21,3 @@
 //     return backwards.join('');
    
 // }
-
-
-const reverse = str => [...str].reverse().join('');
-reverse("Hi my name is Mrinal")
-console.log(reverse())
