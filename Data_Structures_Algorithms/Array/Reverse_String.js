@@ -1,3 +1,5 @@
+## Function to reverse a string
+
 function reverse (str) {
     //check if there is no string or strings length is less than 2
     //and typeof which is used to check what type of datatype is declared
