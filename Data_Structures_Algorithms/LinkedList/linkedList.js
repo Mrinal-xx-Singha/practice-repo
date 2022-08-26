@@ -28,7 +28,7 @@ class LinkedList {
         this.tail.next = newNode;
         //now this.tail is the new node made (newNode)
         this.tail=newNode;
-        // icrement it +1
+        // increment it +1
         this.length++;
         // return this
         return this;
