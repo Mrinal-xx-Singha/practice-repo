@@ -4,11 +4,11 @@ function mult(a,b,c){
     console.log(a*b*c);
 }
 
-//Spread Operator is "...";
+// Spread Operator is "...";
 
 var multiplication = [1,2,3];
 mult(...multiplication)
-//ES6
+// ES6
 
 function sub(a,b)
 {
@@ -17,16 +17,3 @@ function sub(a,b)
 const subtraction=[1000000,100];
 
 sub(...subtraction)
-
-
-
-
-
-
-
-
-
-
-
-
-
