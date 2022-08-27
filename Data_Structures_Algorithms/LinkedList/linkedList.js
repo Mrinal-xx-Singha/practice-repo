@@ -28,7 +28,7 @@ class LinkedList {
         this.tail.next = newNode;
         //now this.tail is the new node made (newNode)
         this.tail=newNode;
-        // icrement it +1
+        // increment it +1
         this.length++;
         // return this
         return this;
@@ -69,7 +69,12 @@ class LinkedList {
 
 const myLinkedList = new LinkedList(10);
 myLinkedList.append(5);
+// <<<<<<< HEAD
 myLinkedList.append(16);
 myLinkedList.prepend(1);
 myLinkedList.printList();
 // console.log(myLinkedList.printList());
+// =======
+myLinkedList.append(10);
+console.log(myLinkedList);
+// >>>>>>> 67fb6abab6cfdb9b3563bbd50c4a28bd9b6e56f6
