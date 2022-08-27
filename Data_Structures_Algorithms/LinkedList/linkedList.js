@@ -33,10 +33,43 @@ class LinkedList {
         // return this
         return this;
     }
+    prepend(value) {
+        // creatign a new node
+        const newNode = {
+            value: value,
+            next: null
+        };
+        // new node .next = null is equal this.head(pointer)
+        // this.next -> this.head
+        newNode.next = this.head;
+        //update this.head with new node
+        this.head = newNode;
+        //increase the length 
+        this.length++;
+        return this
+    }
+    printList(){
+        const array = [];
+        let currentNode = this.head;
+        //While loops are good if we dont know the length
+        //of array or linked list
+        while(currentNode !==null){
+            //untill currentNode is not pointing to null push array to currentNNode.value
+            array.push(currentNode.value);
+            //update the current node and point t
+            currentNode =currentNode.next;
+        }
+        return array;
+    }
+    // insert(index,value){
+
+    // }
     
 }
 
 const myLinkedList = new LinkedList(10);
 myLinkedList.append(5);
-myLinkedList.append(10);
-console.log(myLinkedList);
+myLinkedList.append(16);
+myLinkedList.prepend(1);
+myLinkedList.printList();
+// console.log(myLinkedList.printList());

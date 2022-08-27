@@ -1,1 +1,0 @@
-myLinkedList.append(10);
