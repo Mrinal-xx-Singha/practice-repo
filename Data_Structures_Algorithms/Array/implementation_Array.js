@@ -16,7 +16,7 @@ class MyArray {   //created a class named MyArray
         //this.data[]
         //adding this.data to this
         this.data[this.length] = item;   //this.data[this.length] = item
-        this.length ++  //imcrementing 
+        this.length ++  //incrementing 
         return this.length;   // returning the length of array 
     }
     //Pop method which dont accept any parameter
