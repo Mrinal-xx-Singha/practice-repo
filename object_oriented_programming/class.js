@@ -6,6 +6,7 @@ class Car {
         this.year=year;
     }
     age(){
+        //method named age
         let date = new Date();
         return date.getFullYear()- this.year;
     }
