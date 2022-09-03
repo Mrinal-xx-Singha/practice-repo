@@ -12,8 +12,9 @@ level 1: 2^1 = 2;
 level 2: 2^2 = 4;
 level 3: 2^3 = 8;
 # of nodes = 2^h - 1; (why -1?)
-log nodes = height
-log 100 = 2;
-10^2 = 100;
-Log N is really fast .
+<p>log nodes = height
+log 100 = 2;<br>
+10^2 = 100;<br>
+Log N is really fast .<br>
 Divide and Conqueer is used to find tree.
+</p>
