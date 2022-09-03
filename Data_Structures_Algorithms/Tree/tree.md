@@ -15,5 +15,5 @@ level 3: 2^3 = 8;
 log nodes = height
 log 100 = 2;
 10^2 = 100;
-Log N is really fast 
-Divide and Conqueer is used to find tree 
+Log N is really fast .
+Divide and Conqueer is used to find tree.
