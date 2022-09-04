@@ -61,17 +61,43 @@ class LinkedList {
         }
         return array;
     }
-    // insert(index,value){
-
-    // }
+    insert(index,value){
+        //check the parameter
+        if(index >= this.length){
+            return this.append(value);
+        }
+        const newNode = {
+            value:value,
+            next:null
+        };
+        const leader = this.traverseToIndex(index-1)
+        const holdingPointer = leader.next;
+        leader.next = newNode;
+        newNode.next = holdingPointer;
+        this.length++;
+        return this.printList;
+    }
+    traverseToIndex(index) {
+        let counter =0;
+        let currentNNode = this.head;
+        while(counter !== index) {
+            currentNNode = currentNNode.next;
+            counter++;
+        }
+        return currentNNode;
+    }
     
 }
+
 
 const myLinkedList = new LinkedList(10);
 myLinkedList.append(5);
 // <<<<<<< HEAD
 myLinkedList.append(16);
-myLinkedList.prepend(1);
+myLinkedList.append(12);
+
+myLinkedList.printList();
+// myLinkedList.insert(2,99);
 myLinkedList.printList();
 // console.log(myLinkedList.printList());
 // =======

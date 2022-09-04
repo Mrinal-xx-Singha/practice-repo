@@ -5,7 +5,7 @@ class LinkedList {
     constructor(value){
 
         this.head = {
-        value: value,
+        value:value,
         next:null
         }
         this.tail=this.head;
@@ -38,3 +38,5 @@ myLinkedList.append(5);
 myLinkedList.append(9);
 myLinkedList.prepend(1);
 console.log(myLinkedList);
+
+

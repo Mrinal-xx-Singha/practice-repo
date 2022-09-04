@@ -1,38 +1,37 @@
 class LinkedList {
     constructor(value){
-        this.head={
-            value: value,
-            next: null
-
-        }
+        this.head = {
+            value:value,
+            next:null
+        };
         this.tail=this.head;
-        this.length = 1;
-
+        this.length=1;
     }
     append(value){
         const newNode = {
             value:value,
-            next: null
-        };
+            next:null
+        }; 
         this.tail.next = newNode;
         this.tail = newNode;
-        this.length++;
         return this;
     }
     prepend(value){
-        const newNode={
+        const newNode = {
             value:value,
             next:null
-        };
+        }
         newNode.next = this.head;
-        this.head = newNode;
-        this.length++;
+        this.head=newNode;
         return this
     }
 
+
 }
-const myLinkedList = new LinkedList(10);
+
+
+
+const myLinkedList = new LinkedList();
 myLinkedList.append(5);
-myLinkedList.append(1);
-myLinkedList.append(16);
+
 console.log(myLinkedList);
