@@ -1,1 +1,1 @@
-newStack.pop();
+newArray.pop();
