@@ -59,7 +59,21 @@ class Node {
       }
     }
     lookup(value) {
-      //Code here
+      if(!this.root){
+        return false;
+      }
+      let currentNode = this.root;
+      while(currentNode){
+        if(value < currentNode.value){
+          currentNode = currentNode.left;
+
+        }else if(value > currentNode.value) {
+          currentNode = currentNode.right;
+        }else if(currentNode.value === value){
+          return currentNode;
+        }
+      }
+      return false;
     }
     // remove
   }
