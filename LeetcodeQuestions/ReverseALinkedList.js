@@ -29,5 +29,6 @@
         curr = next;
         
     }
+    // return the previous which is the reversed linked list
     return prev;
 };
