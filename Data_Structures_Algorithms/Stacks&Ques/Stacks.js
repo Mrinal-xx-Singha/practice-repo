@@ -18,6 +18,7 @@ class Stack {
     }
     peek(){
         //simply returning the top value
+        //  the top value of the stack will be re
         return this.top;
     }
 
