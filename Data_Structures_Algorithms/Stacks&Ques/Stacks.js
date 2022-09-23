@@ -67,8 +67,9 @@ const myStack = new Stack();
 myStack.push('google');
 myStack.push('udemy');
 myStack.push('discord');
-myStack.push('');
+myStack.pop()
 myStack.peek();
+myStack.pop();
 myStack.pop();
 
 console.log(myStack);
