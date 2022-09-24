@@ -27,6 +27,9 @@ class Ques {
         this.length++;
         return this.this;
     }
+    deque(){
+        
+    }
     
 }
 const myQueue = new Ques();
