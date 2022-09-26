@@ -18,7 +18,6 @@
     let max =0;
     for(let i=0;i<ans.length;i++){
         max = Math.max(max, (ans[i] +ans[ans.length-1-i]));
-        console.log(max)
     }
     return max;
 };
