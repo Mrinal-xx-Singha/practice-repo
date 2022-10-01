@@ -3,8 +3,8 @@
 
 
 var runningSum = function(nums){
-    let total = o;
-    for(let i=0;i<nums.length;i++){
+    let total = nums[0];
+    for(let i=1;i<nums.length;i++){
         sum += nums[i];
         nums[i] = total;
     }
