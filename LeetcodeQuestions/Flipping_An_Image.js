@@ -32,4 +32,28 @@
 //     }
 //     return matrix;
 // }
-// ----------------------MY SOLUTION--------------------
+// ----------------------MY SOLUTION----------------------
+
+
+
+
+/**
+ * @param {number[][]} image
+ * @return {number[][]}
+ */
+
+ const flipAndInvertImage = function(A){
+    return A.map(image =>image.reverse().map(b => b === 0))
+};
+
+
+
+
+
+
+
+
+
+
+
+
