@@ -46,7 +46,7 @@ class LinkedList {
         this.head = newNode;
         //increase the length 
         this.length++;
-        return this
+        return this;
     }
     printList(){
         const array = [];
