@@ -15,3 +15,17 @@
 // Input: celsius = 36.50
 // Output: [309.65000,97.70000]
 // Explanation: Temperature at 36.50 Celsius converted in Kelvin is 309.65 and converted in Fahrenheit is 97.70.
+
+
+/*
+ * @param {number} celsius
+ * @return {number[]}
+ */
+ var convertTemperature = function(celsius) {
+    let kelvin = celsius + 273.15;
+    let fahrenheit = celsius * 1.80 + 32.00
+    let ans=[];
+    ans.push(kelvin, fahrenheit)
+    
+    return ans;
+};
